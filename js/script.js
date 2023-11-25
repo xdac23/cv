@@ -49,6 +49,8 @@ if(navClose){
     })
 } 
 
+
+
 console.log("MENU Y SETTING WORKING!")
 //===================================== REMOVE MENU PRORFILE =========================
 const navLink = document.querySelectorAll('.nav__link')
@@ -62,13 +64,75 @@ function linkAction(){
 navLink.forEach(n => n.addEventListener('click', linkAction))
 console.log("Remove menu profile is working!")
 
+
 //===================================== Typewriter Effect =========================
 
+
 new Typewriter('#typewriter', {
-    strings: ['Biplov Jha', 'Web-developer', 'Electrical-Engineer', 'e-Tutor', 'Author', ''],
-    autoStart: true,
+  strings: ['Daniel', 'Student', 'Engineer', 'Developer','Tester', 'Coffee addict', ''],
+  autoStart: true,
+  loop: true,
+  cursor: "|"
+});
+// console.log("Typewriter effect is working!")
+
+//===================================== Portfolio Swiper =========================
+
+var swiper = new Swiper(".blog-slider", {
+    spaceBetween: 30,
+    effect: 'fade',
     loop: true,
-    cursor: "|"
+    mousewheel:{
+        invert: false,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".blog-slider__pagination",
+      clickable: true,
+    },
+    // mousewheel: true,
+    keyboard: true,
   });
-  console.log("Typewriter effect is working!")
-  
+console.log("Portfolio Swiper is working!")
+
+
+//===================================== SCROLL UP =========================
+function scrollUp(){
+    const scrollup = document.getElementById('scroll-up');
+    // When the scroll higher than 560 viewpoint /height , then the scroll up icon showld appear and on clicking should reach top of the page
+    if(this.scrollY >= 560) {
+        scrollup.classList.add('show-scroll');
+    }
+    else {
+        scrollup.classList.remove('show-scroll')
+    }
+    console.log("Scroll up being called and working!")
+}
+window.addEventListener('scroll', scrollUp)
+
+//===================================== SCROLL SECTION ACTIVE HIGHLIGHT =========================
+
+const sections = document.querySelectorAll('section[id]')
+
+function scrollActive() {
+    const scrollY = window.pageYOffset
+
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight
+        const sectionTop = current.offsetTop - 50;
+        sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
+        }else{
+            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
+        }
+    })
+
+
+    console.log("Section highlight working!")
+}
+window.addEventListener('scroll', scrollActive)

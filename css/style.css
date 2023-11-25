@@ -1,16 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
  /* ========== VARIABLE CSS ============= */
  :root{
-    --header-height: 3rem;
+    --header-height: 7rem;
 
     /* ============ COLORS ================ */
         /* DECIDE YOUR BROWSER THEME */
-    --hue-color: 250;  /* GREEN: 144,  Blue: 230, Purple: 250, Pink: 340 */
+    --hue-color: 240;  /* GREEN: 144,  Blue: 230, Purple: 250, Pink: 340 */
 
         /* HSL Color Mode */
-    --first-color: hsl(var(--hue-color), 69%, 58%);
+    --first-color: hsl(var(--hue-color), 17%, 34%);
     --first-color-second: hsl(var(--hue-color), 71%, 47%);
-    --first-color-alt: hsl(var(--hue-color), 55%, 50%);
+    --first-color-alt: hsl(var(--hue-color), 1%, 1%);
     --first-color-lighter: hsl(var(--hue-color), 90%, 82%);
 
     --title-color: hsl(var(--hue-color), 10%, 15%);

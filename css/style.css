@@ -8,10 +8,10 @@
     --hue-color: 240;  /* GREEN: 144,  Blue: 230, Purple: 250, Pink: 340 */
 
         /* HSL Color Mode */
-    --first-color: hsl(var(--hue-color), 17%, 34%);
-    --first-color-second: hsl(var(--hue-color), 71%, 47%);
-    --first-color-alt: hsl(var(--hue-color), 1%, 1%);
-    --first-color-lighter: hsl(var(--hue-color), 90%, 82%);
+    --first-color: hsl(var(--hue-color), 17%, 54%);
+    --first-color-second: hsl(var(--hue-color), 100%, 47%);
+    --first-color-alt: hsl(var(--hue-color), 10%, 10%);
+    --first-color-lighter: hsl(var(--hue-color), 30%, 82%);
 
     --title-color: hsl(var(--hue-color), 10%, 15%);
     --text-color: hsl(var(--hue-color), 10%, 40%);
@@ -74,13 +74,13 @@
 /* FONT SIZE FOR LARGER DEVICES */
 @media screen  and (min-width: 968px){
     :root{
-        --big-font-size: 3rem;
+        --big-font-size: 4rem;
         --h1-font-size: 2.5rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
-        --normal-font-size: 1rem;
-        --small-font-size: 0.875rem;
-        --smaller-font-size: 0.813rem;
+        --normal-font-size: 1.1rem;
+        --small-font-size: 1.0rem;
+        --smaller-font-size: 1.0rem;
     }
     
 }
@@ -590,7 +590,7 @@ img{
     left: 0;
     width: 100%;
     height: 100%;
-    background:var(--first-color-lighter);
+    background:var(--first-color);
     clip-path:circle(100px at 80% 20%);
     transition: 0.5s ease-in-out;
 }

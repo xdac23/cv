@@ -5,11 +5,11 @@
 
     /* ============ COLORS ================ */
         /* DECIDE YOUR BROWSER THEME */
-    --hue-color: 240;  /* GREEN: 144,  Blue: 230, Purple: 250, Pink: 340 */
+    --hue-color: 250;  /* GREEN: 144,  Blue: 230, Purple: 250, Pink: 340 */
 
         /* HSL Color Mode */
-    --first-color: hsl(var(--hue-color), 17%, 54%);
-    --first-color-second: hsl(var(--hue-color), 100%, 47%);
+    --first-color: hsl(var(--hue-color), 5%, 54%);
+    --first-color-second: hsl(var(--hue-color), 51%, 47%);
     --first-color-alt: hsl(var(--hue-color), 10%, 10%);
     --first-color-lighter: hsl(var(--hue-color), 30%, 82%);
 
